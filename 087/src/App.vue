@@ -1,38 +1,36 @@
-
 <template>
-    <section>
-        <header><h1>My friends</h1></header>
-        <ul>
-            <friend-contact></friend-contact>
-            <friend-contact></friend-contact>
-        </ul>
-    </section>
+  <section>
+   <header><h1>My friends</h1></header> 
+    <ul>
+      <friend-contact></friend-contact>
+      <friend-contact></friend-contact>
+    </ul>
+  </section>
 </template>
 
 <script>
-import FriendContact from './components/FriendContact.vue'
- export default {
-  components: { FriendContact },
-    data (){
-        return{
-            friends: [
-                {
-                    id: "manuel",
-                    name: "Manuel Lorenz",
-                    phone: "30 4888 123",
-                    email: "lorenz@gmail.com"
-                },
-                {
-                    id: "julia",
-                    name: "Julia Miller",
-                    phone: "30 2121 123",
-                    email: "miller@gmail.com"
-                },
-            ]
-        }
-    }
- }
+export default {
+  data() {
+    return {
+      friends: [
+        {
+          id: "manuel",
+          name: "Manuel Lorent",
+          phone: "3630922424",
+          email: "sfsfs@sdfsf.com",
+        },
+        {
+          id: "julia",
+          name: "Julie Miller",
+          phone: "3480dfdf2424",
+          email: "dfgpqee@oadls.com",
+        },
+      ],
+    };
+  },
+};
 </script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
@@ -99,4 +97,5 @@ header {
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
+
 </style>
