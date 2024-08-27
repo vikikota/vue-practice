@@ -4,8 +4,16 @@
       <h1>My Friends</h1>
     </header>
     <ul>
-      <friend-contact></friend-contact>
-      <friend-contact></friend-contact>
+      <friend-contact
+        name="Mauel Lorenz"
+        phone-number="+365345252"
+        email-address="manuel@lorenz.com"
+      ></friend-contact>
+      <friend-contact
+        name="Julie Miller"
+        phone-number="+323566952"
+        email-address="julie@miller.com"
+      ></friend-contact>
     </ul>
   </section>
 </template>
@@ -14,20 +22,7 @@
 export default {
   data() {
     return {
-      friends: [
-        {
-          id: "manuel",
-          name: "Manuel Lorenz",
-          phone: "0123 45678 90",
-          email: "manuel@localhost.com",
-        },
-        {
-          id: "julie",
-          name: "Julie Jones",
-          phone: "0987 654421 21",
-          email: "julie@localhost.com",
-        },
-      ],
+
     };
   },
 };
