@@ -8,11 +8,13 @@
         name="Mauel Lorenz"
         phone-number="+365345252"
         email-address="manuel@lorenz.com"
-      ></friend-contact>
-      <friend-contact
+        isFavourite ="1"
+        ></friend-contact>
+        <friend-contact
         name="Julie Miller"
         phone-number="+323566952"
         email-address="julie@miller.com"
+        isFavourite ="0"
       ></friend-contact>
     </ul>
   </section>

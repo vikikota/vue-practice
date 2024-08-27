@@ -1,11 +1,13 @@
 <template>
   <li>
-    <h2>{{ name }}</h2>
-    <button @click="toggleDetails">{{ detailsAreVisible ? 'Hide' : 'Show' }} Details</button>
+    <h2>{{ name }} {{ isFavourite === "1" ? "(Favourite)" : "" }}</h2>
+    <button @click="toggleDetails">
+      {{ detailsAreVisible ? "Hide" : "Show" }} Details
+    </button>
     <ul v-if="detailsAreVisible">
       <li>
         <strong>Phone:</strong>
-        {{ phoneAddress }}
+        {{ phoneNumber }}
       </li>
       <li>
         <strong>Email:</strong>
@@ -17,20 +19,16 @@
 
 <script>
 export default {
-  props: [
-    'name',
-    'phoneNumber',
-    'emailAddress'
-  ],
+  props: ["name", "phoneNumber", "emailAddress", "isFavourite"],
   data() {
     return {
-      detailsAreVisible: false, 
+      detailsAreVisible: false,
     };
   },
   methods: {
     toggleDetails() {
       this.detailsAreVisible = !this.detailsAreVisible;
-    }
-  }
+    },
+  },
 };
 </script>
